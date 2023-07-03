@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: https://robertbemmann.github.io/pensieve/
+    url: /
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Blog"
