@@ -1,11 +1,9 @@
 ---
 title: "CV Robert Bemmann"
 permalink: /cv/
-layout: posts
+layout: single
 author_profile: true
 ---
-
-# CV Robert Bemmann
 
 _Data Engineer based in Berlin 🇩🇪_ <br>
 
