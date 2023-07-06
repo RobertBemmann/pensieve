@@ -9,7 +9,7 @@ _Data Engineer based in Berlin 🇩🇪_ <br>
 
 [Email](mailto:bemmann.data@gmail.com) / [Website](https://robertbemmann.github.io/pensieve/) / [LinkedIn](https://www.linkedin.com/in/robert-bemmann/)
 
-## :man_technologist: Engineering Experience
+## Engineering Experience
 
 **Senior Data Engineer** @ [Getyourguide](https://www.getyourguide.com/) _(Apr 2020 - Present)_ <br>
 Berlin-based online travel agency and online marketplace for tour guides and excursions.
@@ -22,6 +22,23 @@ Berlin-based online travel agency and online marketplace for tour guides and exc
   - Building ETLs via Spark (S3 data lake) and enhancing data models (various teams like Finance, CRM, etc.)
   - Main technologies/tools: Apache Spark, Snowflake, Apache Airflow, Looker, Kafka, Terraform
   - Main languages: Python, Scala, SQL
+
+**Data Engineer** @ [Raisin DS](https://www.raisin.com/en/about-raisin/) _(Sep 2014 - Mar 2020)_ <br>
+Trailblazer for open banking in the deposits and investments space.
+  - Conceptualization and creation of a DWH w/ an integrated data model for Deposit Solutions in Snowflake
+  - Creation and maintenance of Savedo-BI-DWH for Data Analysis (PostgreSQL)
+  - Automated Job-Scheduling (e.g. Talend, dockerized setup) on AWS-EC2 instance via Cron-Job
+  - Aggregation and Import of web traffic, cost and conversion data from various sources (structured RDBMS, semi-structured NoSQL), ELT/ETL via Python and Talend
+  - Data modelling through SQL (Postgres, MySQL, Snowflake) and Python
+  - Creation, automation and visualization of reports in order to share data internally (tools: Power BI, metabase, Looker)
+  - Tag Management of 5 websites (Javascript, all trackers, cookie switch)
+  - customised website tracking through Google Analytics (w/ in depth knowledge of data schema of GA)
+  - close cooperation w/ operations, sales, CRM, product management and the developers, actively writing tickets for improvement of data products
+  - deep involvement in 3 financial audits (providing and explaining relevant data)
+  - kicked off data quality assurance concept
+  - Conceptualization and creation of the bank invoicing process
+  - Advances skills in Python for Data Analysis (Anaconda environment, Spyder IDE, Jupyter Notebooks), e.g. writing web crawler for market analysis
+
 
 <br><br>
 
