@@ -44,19 +44,24 @@ Trailblazer for open banking in the deposits and investments space.
 
 ## Skills & Aptitudes
 ## Concepts
-* Airflow
-* Spark (Databricks)
-* Terraform
-* AWS
+* Distributed processing
+  * Spark (Databricks)
+  * Snowflake
+* Job orchestration
+  * Airflow, CRON
+* Infrastructure as code
+  * Terraform
+* Data lake 
+  * Hive / Delta on AWS S3
 
 ### Programming Languages
-Language   | Familiartity  |
---------   |---------------|
-Python     | ■ ■ ■ ■ ■     |
-Scala      | ■ ■ ■ ■ □     |
-SQL        | ■ ■ ■ ■ ■     |
-Javascript | ■ ■ □ □ □     |
-Bash       | ■ ■ □ □ □     |
+| Language    | Familiartity  |
+|-------------|---------------|
+| Python      | ■ ■ ■ ■ ■     |
+| Scala       | ■ ■ ■ ■ □     |
+| SQL         | ■ ■ ■ ■ ■     |
+| Javascript  | ■ ■ □ □ □     |
+| Bash        | ■ ■ □ □ □     |
 
 ### Databases
 * RDBMS
