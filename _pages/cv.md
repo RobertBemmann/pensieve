@@ -39,22 +39,30 @@ Trailblazer for open banking in the deposits and investments space.
   - Conceptualization and creation of the bank invoicing process
   - Advances skills in Python for Data Analysis (Anaconda environment, Spyder IDE, Jupyter Notebooks), e.g. writing web crawler for market analysis
 
-
 <br><br>
 
 ## Skills & Aptitudes
 ## Concepts
 * Distributed processing
-  * Spark (Databricks)
+  * Apache Spark (Databricks)
   * Snowflake
 * Job orchestration
   * Airflow, CRON
 * Infrastructure as code
   * Terraform
 * Data lake 
-  * Hive / Delta on AWS S3
+  * Hive / Delta (metadata management) on AWS S3
+* Database internals
+  * Change data capture via Debezium
+* Messaging Queues
+  * Apache Kafka
+* Data visualization
+  * Looker, Metabase, Power BI
+* Data compression and serialization
+  * Avro, Parquet, JSON
 
 ### Programming Languages
+
 | Language    | Familiartity  |
 |-------------|---------------|
 | Python      | ■ ■ ■ ■ ■     |
