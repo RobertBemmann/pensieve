@@ -39,13 +39,13 @@ Trailblazer for open banking in the deposits and investments space.
   - Conceptualization and creation of the bank invoicing process
   - Advances skills in Python for Data Analysis (Anaconda environment, Spyder IDE, Jupyter Notebooks), e.g. writing web crawler for market analysis
 
-<br><br>
+<br>
 
 ## Skills & Aptitudes
 ## Concepts
 * Distributed processing
-  * Apache Spark (Databricks)
-  * Snowflake
+  * Apache Spark (Databricks): partitioning, skew, and spilling to disk
+  * Snowflake: micro-partitions and cluster management
 * Job orchestration
   * Airflow, CRON
 * Infrastructure as code
@@ -78,18 +78,17 @@ Trailblazer for open banking in the deposits and investments space.
   * Snowflake, Hive, BigQuery
 
 ### Sports
-24-year competitive football experience, e.g. Junioren-Bundesliga, snowboarding, scuba diving
+* 24-year competitive football experience, e.g. Junioren-Bundesliga, snowboarding, scuba diving
 
-### Interests
-* Stocks
-* Future of Capitalism (business models and entrepreneurship), economics, money theories
+### Other interests
+* Stock market, future of capitalism (business models and entrepreneurship), economics, money theories
 
 ## Education
 * 2020 - Udacity
-  * Data Streaming Nanodegree
+  * [Data Streaming Nanodegree](https://graduation.udacity.com/confirm/73LM999P)
   * Kafka & Spark Streaming
 * 2019 - Udacity
-  * Data Science Nanodegree
+  * [Data Science Nanodegree](https://graduation.udacity.com/confirm/SLTPFCMM)
 * 2014 - [Munich Business School](https://www.munich-business-school.de/)
   * Master of Arts in International Business
 * 2013 - [Fudan University Shanghai](https://www.fudan.edu.cn/en/)
