@@ -43,7 +43,42 @@ Trailblazer for open banking in the deposits and investments space.
 <br><br>
 
 ## Skills & Aptitudes
+### Programming Languages  
+
+Language   | Familiartity |
+--------   |--------------|
+Python     | • • • • •    |
+Scala      | • • • • ◦    |
+SQL        | • • • • •    |
+Javascript | • • ◦ ◦ ◦    |
+Bash       | • • ◦ ◦ ◦    |
+
+
+Databases: Postgres, MySQL, Snowflake, Hive, BigQuery
+Other technologies: Airflow, Spark (Databricks), Terraform, AWS
+Sports: 24-year competitive football experience, e.g. Junioren-Bundesliga, snowboarding, scuba diving
+Interests: Stocks, Future of Capitalism, Entrepreneurship, Economics
 
 ## Education
+* 2020 - Udacity
+  * Data Streaming Nanodegree
+  * Kafka & Spark Streaming
+* 2019 - Udacity
+  * Data Science Nanodegree
+* 2014 - Munich Business School
+  * Master of Arts in International Business
+* 2013 - Fudan University Shanghai
+  * Study abroad MBA-Exchange program 
+* 2011 - [Chemnitz University of Technology](https://www.tu-chemnitz.de/index.html)
+  * Bachelor of Science in Business Administration and Mechanical Engineering
+
 
 ## Internships
+* 2014 - Rheingau Founders
+  * Venture Capital, Berlin
+* 2013 - High-Tech Gründerfonds
+  * Venture Capital, Bonn
+* 2012 - Deutsche Bank
+  * Corporate & Investment Banking, Chemnitz
+* 2010 - adidas 
+  * Football Footwear, Herzogenaurach
