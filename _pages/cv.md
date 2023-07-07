@@ -43,21 +43,33 @@ Trailblazer for open banking in the deposits and investments space.
 <br><br>
 
 ## Skills & Aptitudes
-### Programming Languages  
+## Concepts
+* Airflow
+* Spark (Databricks)
+* Terraform
+* AWS
 
-Language   | Familiartity |
---------   |--------------|
-Python     | • • • • •    |
-Scala      | • • • • ◦    |
-SQL        | • • • • •    |
-Javascript | • • ◦ ◦ ◦    |
-Bash       | • • ◦ ◦ ◦    |
+### Programming Languages
+Language   | Familiartity  |
+--------   |---------------|
+Python     | ■ ■ ■ ■ ■     |
+Scala      | ■ ■ ■ ■ □     |
+SQL        | ■ ■ ■ ■ ■     |
+Javascript | ■ ■ □ □ □     |
+Bash       | ■ ■ □ □ □     |
 
+### Databases
+* RDBMS
+  * Postgres, MySQL, H2
+* Cloud Databases 
+  * Snowflake, Hive, BigQuery
 
-Databases: Postgres, MySQL, Snowflake, Hive, BigQuery
-Other technologies: Airflow, Spark (Databricks), Terraform, AWS
-Sports: 24-year competitive football experience, e.g. Junioren-Bundesliga, snowboarding, scuba diving
-Interests: Stocks, Future of Capitalism, Entrepreneurship, Economics
+### Sports
+24-year competitive football experience, e.g. Junioren-Bundesliga, snowboarding, scuba diving
+
+### Interests
+* Stocks
+* Future of Capitalism (business models and entrepreneurship), economics, money theories
 
 ## Education
 * 2020 - Udacity
@@ -65,9 +77,9 @@ Interests: Stocks, Future of Capitalism, Entrepreneurship, Economics
   * Kafka & Spark Streaming
 * 2019 - Udacity
   * Data Science Nanodegree
-* 2014 - Munich Business School
+* 2014 - [Munich Business School](https://www.munich-business-school.de/)
   * Master of Arts in International Business
-* 2013 - Fudan University Shanghai
+* 2013 - [Fudan University Shanghai](https://www.fudan.edu.cn/en/)
   * Study abroad MBA-Exchange program 
 * 2011 - [Chemnitz University of Technology](https://www.tu-chemnitz.de/index.html)
   * Bachelor of Science in Business Administration and Mechanical Engineering
