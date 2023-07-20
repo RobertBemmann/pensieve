@@ -82,7 +82,8 @@ https://debezium.io/blog/2018/07/19/advantages-of-log-based-change-data-capture/
 
 ## Introducing Debezium
 
-**ADD VISUAL**
+<img width="1392" alt="image" src="https://github.com/RobertBemmann/pensieve/assets/8913482/85974605-83c9-413e-9ebe-8fee4275bd1a">
+
 
 Open source (since 2019), built on top of Kafka
 record all row-level changes committed to each source database table in a transaction log (binlog - MySQL, wal - PG)
