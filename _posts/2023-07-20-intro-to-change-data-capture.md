@@ -17,6 +17,8 @@ CDC captures insert, update, and delete operations, and makes the data available
 
 This captured data can be used for a variety of purposes, such as data replication, auditing, and real-time analytics. Some database management systems, such as Oracle and SQL Server, have built-in CDC functionality, while others may require third-party tools to enable CDC.
 
+**ADD VISUAL**
+
 ## Use case examples
 * Make transactional source data available for analytical datawarehouse (OLTP -> OLAP)
     * Mirror your production data in a data lake or analytics DWH 
@@ -30,7 +32,7 @@ This captured data can be used for a variety of purposes, such as data replicati
 ## What types of change data capture for databases do exist?
 There are several different types of change data capture (CDC) for databases. The best method to use depends on the specific requirements and constraints of the application or system.
 
-**Log-based CDC**
+### Log-based CDC
 * Capture changes by reading the database's transaction log, which contains a record of all changes made to the database. The changes are then for example forwarded to a messaging queue like Kafka.
 * Pros
     * Efficient with low overhead
@@ -43,7 +45,9 @@ There are several different types of change data capture (CDC) for databases. Th
     * requires a high amount of storage
     * for Debezium to work the tables need to have a primary key
 
-**Query-based CDC**
+**ADD VISUAL**
+
+### Query-based CDC
 * Periodically run SQL queries against the database 
     * identify any changes that have occurred since the last query (using audit columns)
     * snapshot of the whole table
@@ -58,7 +62,9 @@ There are several different types of change data capture (CDC) for databases. Th
         * you are not able to track delete operations
     * you need so-called audit columns (`update_timestamp` or `last_modification_timestamp`) in each table you want to track
 
-**Trigger-based CDC**
+**ADD VISUAL**
+
+### Trigger-based CDC
 * Capture changes by using database triggers, which are special type of stored procedures that are automatically executed in response to specific events, such as an insert, update, or delete operation on a table.
 * Pros
    * accurate - every change to a record is tracked
@@ -67,9 +73,21 @@ There are several different types of change data capture (CDC) for databases. Th
    * Puts additional load on the database, which is not a great design pattern 
    * The additional data stored in the database can become an operational burden soon
 
-
-**Hybrid CDC** 
+### Hybrid CDC
 * This method combines elements of different CDC methods in order to achieve the desired level of granularity or performance.
 
 ## Quick summary: 5 advantages of log-based CDC
 https://debezium.io/blog/2018/07/19/advantages-of-log-based-change-data-capture/
+
+## Introducing Debezium
+
+**ADD VISUAL**
+
+Open source (since 2019), built on top of Kafka
+record all row-level changes committed to each source database table in a transaction log (binlog - MySQL, wal - PG)
+Connectors for MySQL, MongoDB, PostgreSQL, and other
+records
+key: primary key of table
+value: before and after payload, metadata
+serialization: JSON, Avro
+DI owns deployment and infrastructural monitoring of Debezium at GYG
