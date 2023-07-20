@@ -45,7 +45,8 @@ There are several different types of change data capture (CDC) for databases. Th
     * requires a high amount of storage
     * for Debezium to work the tables need to have a primary key
 
-**ADD VISUAL**
+<img width="1066" alt="image" src="https://github.com/RobertBemmann/pensieve/assets/8913482/af5f5fc6-4305-4895-98ee-4efd6c97b194">
+
 
 ### Query-based CDC
 * Periodically run SQL queries against the database 
