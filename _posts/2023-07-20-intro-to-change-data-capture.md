@@ -1,13 +1,12 @@
 ---
+toc: true
+toc_label: "Contents"
+toc_icon: "file-alt"
 title:  "Intro to change data capture (CDC)"
 last_modified_at: 2023-07-20T14:41:00-01:00
 ---
 
-## Contents
-* [What is Change Data Capture and how is it used?](#what-is-change-data-capture-and-how-is-it-used)
-* [Use case examples](#use-case-examples)
-* [What types of change data capture for databases do exist?](#what-types-of-change-data-capture-for-databases-do-exist)
-* [Quick summary: 5 advantages of log-based CDC](#quick-summary-5-advantages-of-log-based-cdc)
+This post covers basic principles of change data capture for databases, including use case and different types.
 
 ## What is Change Data Capture and how is it used?
 Change data capture (CDC) is a method of tracking and capturing changes made to a database, typically in real-time or near-real-time. 
