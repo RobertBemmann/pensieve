@@ -3,6 +3,12 @@ title:  "Intro to change data capture (CDC)"
 last_modified_at: 2023-07-20T14:41:00-01:00
 ---
 
+## Contents
+* [What is Change Data Capture and how is it used?](#what-is-change-data-capture-and-how-is-it-used)
+* [Use case examples](#use-case-examples)
+* [What types of change data capture for databases do exist?](#what-types-of-change-data-capture-for-databases-do-exist)
+* [Quick summary: 5 advantages of log-based CDC](#quick-summary-5-advantages-of-log-based-cdc)
+
 ## What is Change Data Capture and how is it used?
 Change data capture (CDC) is a method of tracking and capturing changes made to a database, typically in real-time or near-real-time. 
 
@@ -25,7 +31,7 @@ This captured data can be used for a variety of purposes, such as data replicati
 ## What types of change data capture for databases do exist?
 There are several different types of change data capture (CDC) for databases. The best method to use depends on the specific requirements and constraints of the application or system.
 
-*Log-based CDC*
+**Log-based CDC**
 * Capture changes by reading the database's transaction log, which contains a record of all changes made to the database. The changes are then for example forwarded to a messaging queue like Kafka.
 * Pros
   * Efficient with low overhead
@@ -39,7 +45,7 @@ There are several different types of change data capture (CDC) for databases. Th
   * requires a high amount of storage
   * for Debezium to work the tables need to have a primary key
 
-*Query-based CDC*
+**Query-based CDC**
 * Periodically run SQL queries against the database 
   * identify any changes that have occurred since the last query (using audit columns)
   * snapshot of the whole table
@@ -54,7 +60,7 @@ There are several different types of change data capture (CDC) for databases. Th
     * you are not able to track delete operations
   * you need so-called audit columns (`update_timestamp` or `last_modification_timestamp`) in each table you want to track
 
-*Trigger-based CDC*
+**Trigger-based CDC**
 * Capture changes by using database triggers, which are special type of stored procedures that are automatically executed in response to specific events, such as an insert, update, or delete operation on a table.
 * Pros
  * accurate - every change to a record is tracked
@@ -64,8 +70,8 @@ There are several different types of change data capture (CDC) for databases. Th
  * The additional data stored in the database can become an operational burden soon
 
 
-*Hybrid CDC* 
-This method combines elements of different CDC methods in order to achieve the desired level of granularity or performance.
+**Hybrid CDC** 
+* This method combines elements of different CDC methods in order to achieve the desired level of granularity or performance.
 
 ## Quick summary: 5 advantages of log-based CDC
 https://debezium.io/blog/2018/07/19/advantages-of-log-based-change-data-capture/
