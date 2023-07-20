@@ -1,6 +1,6 @@
 ---
 toc: true
-toc_label: "file-altContents"
+toc_label: "Contents"
 toc_icon: "file-alt"
 title:  "Intro to change data capture (CDC)"
 last_modified_at: 2023-07-20T14:41:00-01:00
