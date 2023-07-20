@@ -34,6 +34,7 @@ There are several different types of change data capture (CDC) for databases. Th
     * 
   * Accurate: every change to a record is tracked
 * Cons
+  * requires higher system privileges for access to transaction logs
   * requires expert knowledge in terms of setup (for example Kafka Connect and Kafka for using Debezium)
   * requires a high amount of storage
 
@@ -42,11 +43,14 @@ There are several different types of change data capture (CDC) for databases. Th
   * identify any changes that have occurred since the last query (using audit columns)
   * snapshot of the whole table
 * Pros
-  * simple setup (SQL queries)
+  * simple setup (SQL queries via JDBC) and requires fewer permissions on DB as you just querying
 * Cons
-  * less efficient and accurate
+  * less efficient 
     * snapshot type also stores records that haven't changed
-    * polling delay: if a record changes multiple times since the last query, you will only store the latest update to the record and miss previous changes
+    * additional load to the database by frequent querying
+  * less accurate
+    * if a record changes multiple times between a polling interval, you will only store the latest update to the record and miss previous changes
+    * you are not able to track delete operations
   * you need so-called audit columns (`update_timestamp` or `last_modification_timestamp`) in each table you want to track
 
 *Trigger-based CDC*
