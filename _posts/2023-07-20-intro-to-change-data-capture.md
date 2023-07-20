@@ -1,5 +1,7 @@
 ---
-classes: wide
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "cog"
 title:  "Intro to change data capture (CDC)"
 last_modified_at: 2023-07-20T14:41:00-01:00
 ---
