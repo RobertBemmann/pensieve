@@ -37,6 +37,7 @@ There are several different types of change data capture (CDC) for databases. Th
   * requires higher system privileges for access to transaction logs
   * requires expert knowledge in terms of setup (for example Kafka Connect and Kafka for using Debezium)
   * requires a high amount of storage
+  * for Debezium to work the tables need to have a primary key
 
 *Query-based CDC*
 * Periodically run SQL queries against the database 
