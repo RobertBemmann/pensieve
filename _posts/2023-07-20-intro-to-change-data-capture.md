@@ -40,7 +40,7 @@ There are several different types of change data capture (CDC) for databases. Th
         * by reading the transaction log we have lower latency and avoid increasing CPU load caused by frequent polling
     * Accurate: every change to a record is tracked
 * Cons
-    * requires higher system privileges for access to transaction logs
+    * requires higher system privileges for access to database transaction logs
     * requires expert knowledge in terms of setup (for example Kafka Connect and Kafka for using Debezium)
     * requires a high amount of storage
     * for Debezium to work the tables need to have a primary key
@@ -83,13 +83,42 @@ https://debezium.io/blog/2018/07/19/advantages-of-log-based-change-data-capture/
 ## Introducing Debezium
 
 <img width="1392" alt="image" src="https://github.com/RobertBemmann/pensieve/assets/8913482/85974605-83c9-413e-9ebe-8fee4275bd1a">
+**ADD SUBTITLE AND SOURCE**
 
+* Open source Kafka Connect connector (since 2019), built on top of Kafka
+* record all row-level changes committed to each source database table in a transaction log (MySQL - binlog, Postgres - write ahead log)
+* connectors for MySQL, PostgreSQL, MongoDB, and others 
+* serialization Avro or JSON
 
-Open source (since 2019), built on top of Kafka
-record all row-level changes committed to each source database table in a transaction log (binlog - MySQL, wal - PG)
-Connectors for MySQL, MongoDB, PostgreSQL, and other
-records
-key: primary key of table
-value: before and after payload, metadata
-serialization: JSON, Avro
-DI owns deployment and infrastructural monitoring of Debezium at GYG
+The records come with the following schema:
+* key: primary key of table (mandatory)
+* value
+  * before - payload of the record
+  * after - payload of the record
+  * operation - `u` is for update, there is also `c` (create) and `d` (delete)
+  * source - 
+  * ts_ms - unix timestamp
+  * transaction - 
+
+  DI owns deployment and infrastructural monitoring of Debezium at GYG
+
+```json
+{
+  "before": {
+    "id": 12,
+    "name": "scooter",
+    "description": "Big 2-wheel scooter",
+    "weight": 5.18
+  },
+  "after": {
+    "id": 12,
+    "name": "scooter",
+    "description": "Big 2-wheel scooter",
+    "weight": 6.24
+  },
+  "source": {...},
+  "op": "u", // 
+  "ts_ms": 1589362330904,
+  "transaction": null
+}
+```
