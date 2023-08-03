@@ -122,3 +122,5 @@ The records come with the following schema:
   "transaction": null
 }
 ```
+
+**EXPLAIN BINLOGS**
